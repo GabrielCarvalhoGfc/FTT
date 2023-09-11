@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Formulário para adicionar tarefas -->
+    <form method="POST" action="/add">
+        <input type="text" name="task" placeholder="Nova tarefa" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Lista de tarefas -->
+    <ul>
+        {% for task in tasks %}
+        <li>
+            {{ task[1] }} {% if task[2] %}(Concluída){% endif %}
+            <a href="{{ url_for('edit', task_id=task[0]) }}">Editar</a>
+            <a href="/mark_done/{{ task[0] }}">Concluída</a>
+            <a href="/delete/{{ task[0] }}">Excluir</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
