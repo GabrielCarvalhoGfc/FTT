@@ -32,7 +32,9 @@ Rota "/delete/int:task_id": Permite excluir tarefas.
 Rota "/edit/int:task_id": Permite editar tarefas existentes.
 # Executando o Aplicativo
 Para executar o aplicativo, basta iniciar o script Python:
-```bash python app.py ```
+```bash 
+python app.py
+```
 
 O aplicativo será iniciado em modo de depuração, e você poderá acessá-lo no navegador em http://127.0.0.1:5000
 
@@ -42,4 +44,6 @@ Certifique-se de criar a tabela de tarefas (create_table()) antes de começar a 
 Este é um exemplo básico de um aplicativo Flask que permite a criação e gerenciamento de tarefas. Você pode estender este aplicativo adicionando mais recursos, como autenticação de usuário, prioridades de tarefas, datas de vencimento, etc.
 
 
-```Lembre-se de adaptar o nome do arquivo Python conforme necessário e incluir qualquer outra informação relevante no seu projeto. Esta documentação em formato Markdown ajudará a explicar o funcionamento do seu código Flask para outras pessoas que o utilizem ou colaborem com ele. ```
+```perl
+Lembre-se de adaptar o nome do arquivo Python conforme necessário e incluir qualquer outra informação relevante no seu projeto. Esta documentação em formato Markdown ajudará a explicar o funcionamento do seu código Flask para outras pessoas que o utilizem ou colaborem com ele.
+```
